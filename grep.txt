@@ -39,4 +39,9 @@ To Display Line Numbers with grep Matches
 Limit grep Output to a Fixed Number of Lines
 	grep –m2 'search word' *
 
+To Search Multiple Words
+	grep 'search word1\|search word2\|search word3' fileName
+	grep -e 'search word1' -e 'search word2' -e 'search word3' fileName
 
+Display matched pattern in colors
+	grep --color 'search word' fileName
